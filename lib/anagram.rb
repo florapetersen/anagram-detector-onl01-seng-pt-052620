@@ -7,7 +7,9 @@ class Anagram
 
   def match(array)
     binding.pry
-    if array.exclude?(@word)
+    if array.include?(@word)
+      return true
+    else
       return []
     end
     array.each do |new_word|
