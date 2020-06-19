@@ -9,8 +9,10 @@ class Anagram
     match_array = []
     if array.include?(@word)
       array.each do |new_word|
-      if new_word.chars.sort.join == @word.chars.sort.join
-        new_word << match_array
+        if new_word.chars.sort.join == @word.chars.sort.join
+          new_word << match_array
+        end
+      end
     else
       return []
     end
