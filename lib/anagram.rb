@@ -6,10 +6,12 @@ class Anagram
   end
 
   def match(array)
+    @word.chars.sort.join
     array.each do |new_word|
     binding.pry
-      new_word.split('').sort.join
-      
+      if new_word.chars.sort.join == @word.chars.sort.join
+        return true  
+      end
     end
   end
 end
