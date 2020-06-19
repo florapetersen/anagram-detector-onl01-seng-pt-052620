@@ -6,7 +6,7 @@ class Anagram
   end
 
   def match(array)
-    if array.!include?(@word)
+    if array.exclude?(@word)
       return []
     end
     array.each do |new_word|
