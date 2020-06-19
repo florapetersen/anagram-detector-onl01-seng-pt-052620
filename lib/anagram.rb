@@ -11,10 +11,12 @@ class Anagram
     else
       return []
     end
+    match_array = []
     array.each do |new_word|
       if new_word.chars.sort.join == @word.chars.sort.join
-        return true
+        new_word << match_array
       end
+    return match_array
     end
   end
 end
