@@ -6,7 +6,6 @@ class Anagram
   end
 
   def match(array)
-    binding.pry
     match_array = []
     array.map do |new_word|
       new_word.chars.sort.join == @word.chars.sort.join
