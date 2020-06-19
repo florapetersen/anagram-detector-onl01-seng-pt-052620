@@ -8,6 +8,8 @@ class Anagram
   def match(array)
     if array.!include?(@word)
       return []
+    end
+  
     array.each do |new_word|
       if new_word.chars.sort.join == @word.chars.sort.join
         return true
