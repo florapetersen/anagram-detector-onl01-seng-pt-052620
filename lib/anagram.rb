@@ -7,8 +7,9 @@ class Anagram
 
   def match(array)
     array.each do |new_word|
-      binding.pry
+    binding.pry
       new_word.split('').sort.join
+      
     end
   end
 end
