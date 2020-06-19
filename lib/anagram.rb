@@ -6,17 +6,14 @@ class Anagram
   end
 
   def match(array)
+    match_array = []
     if array.include?(@word)
-      return true
+      array.each do |new_word|
+      if new_word.chars.sort.join == @word.chars.sort.join
+        new_word << match_array
     else
       return []
     end
-    match_array = []
-    array.each do |new_word|
-      if new_word.chars.sort.join == @word.chars.sort.join
-        new_word << match_array
-      end
     return match_array
-    end
   end
 end
