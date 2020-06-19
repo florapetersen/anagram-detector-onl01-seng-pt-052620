@@ -10,7 +10,7 @@ class Anagram
     array.each do |new_word|
     binding.pry
       if new_word.chars.sort.join == @word.chars.sort.join
-        return true  
+        return true
       end
     end
   end
