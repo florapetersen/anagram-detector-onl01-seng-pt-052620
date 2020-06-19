@@ -10,7 +10,6 @@ class Anagram
     array.each do |new_word|
       if new_word.chars.sort.join == @word.chars.sort.join
         match_array << new_word
-      end
       else
         return []
       end
