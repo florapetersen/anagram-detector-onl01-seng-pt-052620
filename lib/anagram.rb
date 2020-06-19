@@ -6,6 +6,7 @@ class Anagram
   end
 
   def match(array)
+    binding.pry
     match_array = []
     if array.include?(@word)
       array.each do |new_word|
