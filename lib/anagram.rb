@@ -6,7 +6,8 @@ class Anagram
 
   def match(array)
     array.each do |new_word|
-      new_word.chars.sort
+      new_word.chars.sort.join
+      
     end
   end
 end
