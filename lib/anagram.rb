@@ -8,15 +8,14 @@ class Anagram
   def match(array)
     binding.pry
     match_array = []
-    if array.include?(@word)
-      array.each do |new_word|
-        if new_word.chars.sort.join == @word.chars.sort.join
-          match_array << new_word
-        end
+    array.each do |new_word|
+      if new_word.chars.sort.join == @word.chars.sort.join
+        match_array << new_word
       end
-    else
-      return []
+      else
+        return []
+      end
+      return match_array
     end
-    return match_array
   end
 end
