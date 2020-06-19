@@ -6,6 +6,7 @@ class Anagram
   end
 
   def match(array)
+    array.include?(@word)
     array.each do |new_word|
       if new_word.chars.sort.join == @word.chars.sort.join
         return true
