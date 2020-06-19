@@ -6,6 +6,7 @@ class Anagram
   end
 
   def match(array)
+    binding.pry
     if array.exclude?(@word)
       return []
     end
